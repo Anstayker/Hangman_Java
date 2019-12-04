@@ -6,8 +6,13 @@ public class HolidayCalendar {
 
     public boolean isHoliday(MyDate date) {
         boolean res = false;
-        if(date.getDay() == "Domingo")
+        if(date.getWeekday() == "Domingo") {
             res = true;
+        } else {
+            if(date.getDay() == 25 && date.getMonth() == 12) {
+                res = true;
+            }
+        }
         return res;
     }
 }
