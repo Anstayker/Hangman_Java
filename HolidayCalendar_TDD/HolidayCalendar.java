@@ -5,6 +5,9 @@ public class HolidayCalendar {
     }
 
     public boolean isHoliday(String dia) {
-        return true;
+        boolean res = false;
+        if(dia == "Domingo")
+            res = true;
+        return res;
     }
 }

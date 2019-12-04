@@ -13,5 +13,11 @@ public class Calendar_Test {
         HolidayCalendar calendar = new HolidayCalendar();
         assertTrue(calendar.isHoliday("Domingo"));
     }
+    
+    @Test
+    public void Test2() {
+        HolidayCalendar calendar = new HolidayCalendar();
+        assertFalse(calendar.isHoliday("Lunes"));
+    }
 
 }
