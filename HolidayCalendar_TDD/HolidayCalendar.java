@@ -4,7 +4,7 @@ public class HolidayCalendar {
 
     }
 
-    public boolean isHoliday() {
+    public boolean isHoliday(String dia) {
         return true;
     }
 }
