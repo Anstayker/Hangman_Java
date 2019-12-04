@@ -5,18 +5,23 @@ import org.junit.Test;
 
 public class Calendar_Test {
 
+    HolidayCalendar calendar;
+    
     public Calendar_Test() {
+    }
+    
+    @Before
+    public void setUp() {
+        calendar = new HolidayCalendar();
     }
     
     @Test
     public void Test1() {
-        HolidayCalendar calendar = new HolidayCalendar();
         assertTrue(calendar.isHoliday("Domingo"));
     }
     
     @Test
     public void Test2() {
-        HolidayCalendar calendar = new HolidayCalendar();
         assertFalse(calendar.isHoliday("Lunes"));
     }
 
