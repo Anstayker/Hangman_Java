@@ -10,7 +10,6 @@ public class MyDate {
         day = d;
         month = m;
         year = y;
-        System.out.println(weekday);
     }
     
     public int getWeekday() {
