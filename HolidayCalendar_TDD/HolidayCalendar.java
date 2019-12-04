@@ -4,9 +4,9 @@ public class HolidayCalendar {
 
     }
 
-    public boolean isHoliday(String dia) {
+    public boolean isHoliday(MyDate date) {
         boolean res = false;
-        if(dia == "Domingo")
+        if(date.getDay() == "Domingo")
             res = true;
         return res;
     }

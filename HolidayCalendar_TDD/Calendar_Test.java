@@ -17,12 +17,14 @@ public class Calendar_Test {
     
     @Test
     public void Test1() {
-        assertTrue(calendar.isHoliday("Domingo"));
+        MyDate date = new MyDate("Domingo");
+        assertTrue(calendar.isHoliday(date));
     }
     
     @Test
     public void Test2() {
-        assertFalse(calendar.isHoliday("Lunes"));
+        MyDate date = new MyDate("Lunes");
+        assertFalse(calendar.isHoliday(date));
     }
 
 }
