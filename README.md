@@ -1,2 +1,2 @@
-# Hangman_Java
+# HolidayCalendar_Java
 Hangman game implemented using TDD
