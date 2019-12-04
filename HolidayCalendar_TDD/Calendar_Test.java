@@ -17,19 +17,25 @@ public class Calendar_Test {
     
     @Test
     public void Test1() {
-        MyDate date = new MyDate("Domingo", 10, 10);
+        MyDate date = new MyDate(1, 12, 2019);
         assertTrue(calendar.isHoliday(date));
     }
     
     @Test
     public void Test2() {
-        MyDate date = new MyDate("Lunes", 10, 10);
+        MyDate date = new MyDate(12, 03, 2019);
         assertFalse(calendar.isHoliday(date));
     }
 
-        @Test
+    @Test
     public void Test3() {
-        MyDate date = new MyDate("Lunes" ,25, 12);
+        MyDate date = new MyDate(25 ,12, 2019);
         assertTrue(calendar.isHoliday(date));
+    }
+    
+    @Test
+    public void Test4() {
+        MyDate date = new MyDate(18, 12, 2019);
+        assertEquals( date.getWeekday(), 3);
     }
 }
